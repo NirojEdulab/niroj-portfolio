@@ -71,7 +71,7 @@ p {
 }
 
 .projectBox{
-    min-width: 200px;
+    min-width: 270px;
     min-height: 300px;
     border-radius: 20px;
     padding: 10px;
@@ -81,7 +81,7 @@ p {
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 
     img{
-        width: 180px;
+        width: 250px;
         height: 150px;
         object-fit: cover;
         padding: 5px;
@@ -159,8 +159,43 @@ button:active{
     text-align: center;
     min-width: 100px;
     height: 100px;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+}
+
+@media (width >= 480px){
+    .projectBox{
+        min-width: 350px;
+        min-height: 250px;
+        border-radius: 20px;
+        padding: 10px;
+        -webkit-box-shadow: 0px 0px 20px -2px #000000; 
+        box-shadow: 0px 0px 20px -2px #000000;
+
+        img{
+            width: 300px;
+            height: 150px;
+            object-fit: cover;
+            padding: 5px;
+            border-radius: 20px;
+        }
+    }
+
+    .projectLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-width: 100px;
+        height: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 15px;
+    }
 }
 
 @media (width >= 800px){
@@ -182,7 +217,7 @@ button:active{
     }
 
     .projectBox{
-        min-width: 250px;
+        min-width: 400px;
         min-height: 350px;
         border-radius: 20px;
         padding: 10px;
@@ -190,12 +225,28 @@ button:active{
         box-shadow: 0px 0px 20px -2px #000000;
 
         img{
-            width: 230px;
+            width: 360px;
             height: 150px;
             object-fit: cover;
             padding: 5px;
             border-radius: 20px;
         }
+    }
+
+    .projectLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-width: 100px;
+        height: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 15px;
     }
 }
 
