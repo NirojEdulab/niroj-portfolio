@@ -34,7 +34,7 @@
         color: var(--form-text-color);
     }
 
-    input[type='submit']{
+    button{
         background-color: var(--btn-color);
         color: var(--btn-text-color);
         border: none;
@@ -49,11 +49,11 @@
         margin: auto;
     }
 
-    input[type='submit']:hover{
+    button:hover{
         transform: scale(1.05);
     }
 
-    input[type='submit']:active{
+    button:active{
         transform: translateY(2px);
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     }
@@ -61,7 +61,7 @@
 
 @media (width >= 476px){
     .container{
-        textarea, input:not([type='submit']){
+        textarea{
             width: 350px;
             font-size: 14px;
             
@@ -74,7 +74,7 @@
 
 @media (width >= 800px){
     .container{
-        textarea, input:not([type='submit']){
+        textarea{
             width: 600px;
             font-size: 20px;
             
@@ -87,7 +87,7 @@
 
 @media (width >= 1400px){
     .container{
-        textarea, input:not([type='submit']){
+        textarea{
             width: 800px;
         }
     }
