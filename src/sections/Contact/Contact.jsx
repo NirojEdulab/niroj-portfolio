@@ -77,10 +77,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        {/* <input className="btn hover" type="submit" value="Submit" /> */}
-        <button className="btn hover" type="submit" disabled={isLoading}>
-          {isLoading ? "Submitting..." : "Submit"}
-        </button>
+        <input className="btn hover" type="submit" value={isLoading ? 'Submitting' : 'Submit'} />
       </form>
     </section>
   );
