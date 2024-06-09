@@ -6,10 +6,7 @@
     --text-color: #222;
     --form-text-color: #555;
     --footer-text-color: #888;
-}
-
-html{
-    scroll-snap-type: y mandatory;
+    --tech-bg-color: #d3d3d3;
 }
 
 [data-theme="light"] {
@@ -20,6 +17,8 @@ html{
     --text-color: #fff;
     --form-text-color: #fff;
     --footer-text-color: #bbb;
+    --tech-bg-color: #323232;
+    
 }
 
 body{
@@ -71,6 +70,99 @@ p {
     cursor: pointer;
 }
 
+.projectBox{
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 20px -2px #000000; 
+    box-shadow: 0px 0px 20px -2px #000000;
+    cursor: pointer;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+
+    img{
+        width: 180px;
+        height: 150px;
+        object-fit: cover;
+        padding: 5px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0px 15px 25px -16px #000000; 
+        box-shadow: 0px 15px 25px -16px #000000;
+    }
+}
+
+.projectBox:hover{
+    transform: scale(1.05);
+}
+
+.projectBox:active{
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.techStackList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px 0;
+
+    p{
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: var(--tech-bg-color);
+        width: fit-content;
+        color: var(--text-color);
+    }
+}
+
+.techBox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+button{
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.projectLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+    height: 100px;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media (width >= 800px){
     #root{
         gap: 100px;
@@ -87,6 +179,23 @@ p {
 
     .sectionTitle{
         margin-bottom: 60px;
+    }
+
+    .projectBox{
+        min-width: 250px;
+        min-height: 350px;
+        border-radius: 20px;
+        padding: 10px;
+        -webkit-box-shadow: 0px 0px 20px -2px #000000; 
+        box-shadow: 0px 0px 20px -2px #000000;
+
+        img{
+            width: 230px;
+            height: 150px;
+            object-fit: cover;
+            padding: 5px;
+            border-radius: 20px;
+        }
     }
 }
 

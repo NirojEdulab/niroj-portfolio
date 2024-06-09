@@ -6,6 +6,7 @@ import linkedInDarkIcon from '../../assets/linkedin-dark.svg'
 import linkedInLightIcon from '../../assets/linkedin-light.svg'
 import githubDarkIcon from '../../assets/github-dark.svg'
 import githubLightIcon from '../../assets/github-light.svg'
+import CV from '../../assets/Niroj_CV.pdf'
 import { useTheme } from '../../common/ThemeContext';
 
 const Hero = () => {
@@ -28,15 +29,17 @@ const Hero = () => {
         </h1>
         <h2>Full Stack Developer</h2>
         <span>
-          <a href="https://www.linkedin.com/" target='_blank'>
+          <a href="https://www.linkedin.com/in/niroj-kumar-basa-735954156/" target='_blank'>
             <img src={linkedInIcon} alt="LinkedIn Icon" width={75} height={75}/>
           </a>
-          <a href="https://github.com/" target='_blank'>
+          <a href="https://github.com/NirojEdulab" target='_blank'>
             <img src={githubIcon} alt="Github Icon" width={75} height={75}/>
           </a>
         </span>
-        <p className={styles.description}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum debitis sed dolore beatae minus tempora amet nam illo facere blanditiis!</p>
-        <button>Resume</button>
+        <p className={styles.description}>Logical and results-driven Full Stack Developer dedicated to building and optimizing user-focused websites.</p>
+        <a href={CV} download>
+          <button className='hover'>Resume</button>
+        </a>
       </div>
     </section>
   )
