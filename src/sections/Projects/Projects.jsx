@@ -9,7 +9,7 @@ const Projects = () => {
       <h1 className='sectionTitle'>Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard liveLink={"https://yoom-live.vercel.app/"} logo={yoomLogo} title={"Yoom"} desc={"Video Calling App"} projectLink={"https://github.com/NirojEdulab/Yoom"} createdAt={"Apr 2024"}/>
-        <ProjectCard liveLink={"https://social-media-clone-insta.vercel.app/"} logo={instaCloneLogo} title={"Instagram Clone"} desc={""} projectLink={"https://github.com/NirojEdulab/InstagramClone"} createdAt={"Dec 2023"}/>
+        <ProjectCard liveLink={"https://social-media-clone-insta.vercel.app/"} logo={instaCloneLogo} title={"Instagram Clone"} desc={"Instagram Clone"} projectLink={"https://github.com/NirojEdulab/InstagramClone"} createdAt={"Dec 2023"}/>
       </div>
     </section>
   )

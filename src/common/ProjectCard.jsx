@@ -1,6 +1,13 @@
-import TechStack from "./TechStack"
+import TechStack from "./TechStack";
 
-const ProjectCard = ({ liveLink, logo, title, desc, projectLink, createdAt }) => {
+const ProjectCard = ({
+  liveLink,
+  logo,
+  title,
+  desc,
+  projectLink,
+  createdAt,
+}) => {
   return (
     // <a href={liveLink} target='_blank'>
     //   <img className='hover' src={logo} alt={`${logo} app`}/>
@@ -9,19 +16,30 @@ const ProjectCard = ({ liveLink, logo, title, desc, projectLink, createdAt }) =>
     // </a>
     <div className="projectBox">
       <img src={logo} alt="project logo" />
-      <h3>{title}<p></p></h3>
+      <h3>
+        {title}
+        <p></p>
+      </h3>
 
       <div className="techBox">
-        <TechStack tech={"TypeScript"} />
-        <TechStack tech={"NextJS"} />
+        {/* <TechStack tech={"TypeScript"} />
+        <TechStack tech={"NextJS"} /> */}
       </div>
-      <span><p style={{ fontSize: '14px', textAlign: 'start', marginLeft: '5px' }}>{createdAt}</p></span>
+      <span>
+        <p style={{ fontSize: "14px", textAlign: "start", marginLeft: "5px" }}>
+          {createdAt}
+        </p>
+      </span>
       <div className="projectLinks">
-        <a href={projectLink} target="_blank"><button>View Code</button></a>
-        <a href={liveLink} target="_blank"><button>Visit Site</button></a>
+        <a href={projectLink} target="_blank">
+          <button>View Code</button>
+        </a>
+        <a href={liveLink} target="_blank">
+          <button>Visit Site</button>
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
